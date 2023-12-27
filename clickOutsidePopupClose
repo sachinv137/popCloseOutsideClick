@@ -1,0 +1,7 @@
+$(document).click(function (e) {
+    e.stopPropagation();
+    var container = $(".txtPassengers");
+    if (container.has(e.target).length === 0) {
+        $(this).find('.pasenger-popup').removeClass('active');
+    }
+});
